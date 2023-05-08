@@ -19,7 +19,7 @@ function WagoAnalyticsShim:Register(wagoID)
 end
 
 function WagoAnalyticsShim:RegisterAddon(addonName)
-	local wagoID = GetAddOnMetadata(addonName, "X-Wago-ID")
+	local wagoID = C_AddOns.GetAddOnMetadata(addonName, "X-Wago-ID")
 	if not wagoID then
 		return false
 	end

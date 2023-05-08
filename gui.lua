@@ -35,7 +35,7 @@ Enjoy!
     local title = splash:CreateFontString(nil, "ARTWORK", "GameFont_Gigantic")
     title:SetTextColor(1, 1, 1)
     title:SetPoint("TOP", 0, -25)
-    title:SetText("Aurora " .. _G.GetAddOnMetadata("Aurora", "Version"))
+    title:SetText("Aurora " .. _G.C_AddOns.GetAddOnMetadata("Aurora", "Version"))
 
     local body = splash:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
     body:SetPoint("TOP", title, "BOTTOM", 0, -20)
@@ -225,7 +225,7 @@ _G.InterfaceOptions_AddCategory(gui)
 
 local title = gui:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 title:SetPoint("TOP", -30, -26)
-title:SetText("Aurora " .. _G.GetAddOnMetadata("Aurora", "Version"))
+title:SetText("Aurora " .. _G.C_AddOns.GetAddOnMetadata("Aurora", "Version"))
 
 --[[ Features ]]--
 local features = addSubCategory(gui, "Features")
